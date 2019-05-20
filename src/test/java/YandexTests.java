@@ -48,8 +48,7 @@ public class YandexTests extends TestBase {
         String expectedName = app.market().firstElement();
         app.market().search(expectedName);
         System.out.println("expectedName: " + expectedName);
-
-        app.market().search(expectedName);
+        
         app.market().waiting();
 
         String actualName = app.market().firstElement();
