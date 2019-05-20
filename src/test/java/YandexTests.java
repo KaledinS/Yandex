@@ -43,12 +43,12 @@ public class YandexTests extends TestBase {
         app.market().waiting();
 
         int sizeElements = app.market().sizeElements();
-        assertEquals(10, sizeElements);
+        assertEquals(11, sizeElements);
 
         String expectedName = app.market().firstElement();
         app.market().search(expectedName);
         System.out.println("expectedName: " + expectedName);
-        
+
         app.market().waiting();
 
         String actualName = app.market().firstElement();
